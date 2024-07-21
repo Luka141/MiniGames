@@ -1,0 +1,133 @@
+.last-body {
+    margin: 0px;
+    padding: 0px;
+    background-color:  #3c365e;;
+    font-family: 'Poppins', sans-serif;
+    animation-name: fade;
+    animation-duration: 2s;
+    overflow-x: hidden;
+  }
+  @keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  main {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  
+  main section.game {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 3fr;
+    gap: 10px;
+    padding: 25px;
+    box-shadow: rgba(0,0,0,0.35) 0px 2px 7px;
+    border-radius: 8px;
+    background-color: rgb(231, 231, 231);
+  }
+  
+  main section.game .panel div.wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: flex-start;
+    row-gap: 10px;
+  }
+  
+  main section.game .panel div.wrap h3 {
+    margin: 0px;
+    font-size: 25px;
+  }
+  
+  main section.game .panel div .buttons {
+    gap: 10px;
+  }
+  
+  main section.game .panel div .buttons button {
+    padding: 8px 15px;
+    background-color: rgba(0, 128, 0, 0.7);
+    border: 0px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  main section.game .panel div .buttons button:hover {
+    background-color: rgba(0, 128, 0);
+    color: white;
+  }
+  
+  main section.game .panel div .buttons button.medium {
+    background-color: rgba(255, 162, 1, 0.7);
+  }
+  
+  main section.game .panel div .buttons button.hard {
+    background-color: rgba(255, 0, 0, 0.7);
+  }
+  
+  main section.game .panel div .buttons button.party {
+    background-color: rgba(1, 86, 255, 0.7);
+  }
+  
+  main section.game .panel div .buttons button.medium:hover {
+    background-color: rgba(255, 162, 1);
+  }
+  
+  main section.game .panel div .buttons button.hard:hover {
+    background-color: rgba(255, 0, 0);
+  }
+  
+  
+  
+  main section.game .box-side {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  main section.game .box-side .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+  
+  main section.game .box-side .boxes .box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: not-allowed;
+    transition: 0.5s ease;
+  }
+  .back{
+    display: flex;
+    position: relative;
+    left: 150px;
+    top: 60px;
+}
+.back a {
+    text-decoration: none;
+    font-size: 25px;
+    color: salmon;
+    transition: 0.5s;
+}
+.back a:hover{
+    color: rgb(95, 230, 54);
+    transform: translateX(-5px);
+    transition: 0.5s;
+}

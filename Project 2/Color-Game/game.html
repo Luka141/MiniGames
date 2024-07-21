@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body class="last-body">
+  <header>
+    <div class="back">
+        <a href="/Index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+</header>
+    <main>
+        <section class="game">
+          <aside class="panel flex-center">
+            <div class="wrap">
+              <h3>Score: <span id="displayScore">0</span></h3>
+              <h3>Color: <span id="displayColor">None</span></h3>
+              <div class="buttons flex-center">
+                <button class="easy" id="easyBtn">Easy</button>
+                <button class="medium" id="mediumBtn">Medium</button>
+                <button class="hard" id="hardBtn">Hard</button>
+              </div>
+            </div>
+          </aside>
+          <aside class="box-side">
+            <div class="boxes">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="boxes">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="boxes">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </aside>
+        </section>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="./game.js"></script>
+</body>
+</html>

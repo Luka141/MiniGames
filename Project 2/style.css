@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+.body1{
+    animation-name: fade;
+    animation-duration: 2s;
+    overflow-x: hidden;
+    background-color:rgb(220, 231, 248) ;
+    height: 1000px;
+}
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 70px;
+    height: auto;
+}
+.Main-title-ul{
+    display: flex;
+    gap: 22px;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.Main-title-li{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: rgb(0,32,76);
+    transition: 0.5s;
+}
+.Main-title-li1{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: rgb(167,0,250);
+}
+.Main-title-li:hover{
+    color: rgb(167,0,250);
+    transition: 0.5s;
+}
+.Main-title2{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    padding:   15px;
+    color: rgb(0,32,76);
+    border-radius: 15px;
+    box-shadow: rgb(228,219,254) 10px 10px 10px ; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(220, 231, 248);
+    height: auto;
+}
+
+.clock{
+    width: 350px; 
+    padding: 25px;
+    background: rgba(red, green, blue, alpha);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgb(170, 40, 170) 5px 5px  5px;
+    margin-top: 150px;
+}
+.clock span {
+    font-size: 50px;
+    width: 180px;
+    color: rgb(44, 5, 184);
+}
+ .container::before{
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: #f41b75;
+    border-radius: 5px;
+    position: absolute;
+    right: 350px;
+    top:  110px;
+    z-index: -1;
+}
+.container::after{
+    content: '';
+    width:  120px;
+    height: 120px;
+    background: #419aff;
+    border-radius: 50%;
+    position: absolute;
+    right: -35px;
+    bottom: -40px;
+    z-index: -1;
+} 
+.First-box{
+    height: 800px;
+    width: 100%; 
+ }
+.First-box1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 900px;
+  position: relative;
+  top: 200px;
+  
+}
+.First-box1 h1{
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0,32,76);
+}
+.First-box1 h2{
+    font-size: 60px;
+    background-color: rgb(155,0,231);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border-radius: 50px;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.First-box1 h3 {
+    color: rgb(0,32,76);
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+}
+.First-box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.First-box-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+.First-box-img img {
+    position: relative;
+    top: 200px;
+}
+.Gameall{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Gamefirst{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: white;
+    width: 250px;
+    height: 125px;
+    box-shadow: rgb(170, 40, 170) 5px 5px  5px;
+}
+.Gametext{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Gametext h4 {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0,32,76);
+}
+.Gametext p {
+    font-size: 15px;
+    color: rgb(0,32,76);
+    font-family: 'Open Sans', sans-serif;
+}
+.Gamefirst img {
+    border-radius: 30px;
+    border: 5px solid rgb(234,242,255);
+    cursor: pointer;
+}
+.Big-poto{
+    width: 100%;
+    height: auto;;
+    position: relative;
+    bottom: 150px;
+}
+.Big-poto img{
+    position: relative;
+    bottom: 120px;
+    width: 1400px;
+}
+.Small-poto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 250px;
+    bottom: 400px;
+}
+.Second-box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 560px;
+}
+.Second-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    position: relative;
+    top: 200px;
+}
+.Second-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 900px;
+    position: relative;
+    top: 200px;
+    gap: 20px;
+  }
+  .Second-box h1{
+    font-size: 44px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0,32,76);
+    gap: 20px;
+}
+.Second-box h2{
+    font-size: 44px;
+    background-color: rgb(155,0,231);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border-radius: 50px;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Second-box h3 {
+    color: rgb(0,32,76);
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 0.6em;
+}
+.explore-second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 170px;
+}
+.explore-games{
+    width: 580px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    left: 280px;
+}
+.Gamefirst1{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.Gametext1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.explore-text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px; 
+    margin: 0px 40px;
+    line-height: 1.5em;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    bottom: 50px;
+    color: rgb(0,32,76);
+}
+
+.Gamefirst2 {
+    align-items: center;
+    gap: 20px;
+    justify-content: center;  
+    display: flex;
+    position: relative;
+    margin: 80px 40px;
+}
+.Gamefirst2 img {
+    border-radius: 30px;
+    border: 5px solid rgb(234,242,255);
+    cursor: pointer;
+}
+.Gametext1 h4{
+    color: rgb(0,32,76);
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+.Gametext1 p{
+    color: rgb(0,32,76);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.explore-img2{
+    display: flex;
+    margin: 0px 40px;
+    gap: 20px;
+    position: relative;
+    bottom: 10px;
+}
+.explore-games1{
+    width: 580px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    right: 280px;
+}
+
+.start{
+    display: flex;
+}
+.Start-play{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin: 0px 100px;
+    flex-direction: column;
+}
+.texts1{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 850px;
+    flex-wrap: wrap;   
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.start-play-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+}
+.start-play-text1 h3{
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0,32,76);
+}
+.texts1 h2, .texts1 h1  {
+    font-size: 44px;
+    color: rgb(0,32,76);
+}
+.texts1 h4{
+    font-size: 44px;
+    background-color: rgb(155,0,231);
+    color: white;
+    border-radius: 50px;
+    padding: 0px 25px;
+}
+.openings1 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(0,32,76);
+    color: white;
+    width: 140px;
+    height: 55px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    top: 30px;
+}
+.openings1 button:hover{
+    background-color: rgb(167,0,250);
+    transition: 0.3s;
+    position: relative;
+    transform: translateX(20px);
+}
+.for-newgames-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.for-newgames-title img {
+    position: relative;
+    left: 7px;
+    width: 950px;
+}
+.for-newgames-title h1 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 70px;
+    font-size: 44px;
+    color: rgb(0,32,76);
+}
+.Gameall2{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    bottom: 340px;
+    left: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.Gamefirst2{
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    width: 250px;
+    height: 125px;
+    box-shadow: rgb(170, 40, 170) 5px 5px  5px;
+}
+.For-newgames{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 150px;
+}
+.Gamefirst2 img {
+    width: 80px;
+    height: 80px;
+}
+.Main-title3  {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    padding:   15px;
+    color: rgb(0,32,76);
+    border-radius: 15px;
+    box-shadow: rgb(228,219,254) 10px 10px 10px ; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 180px;
+}
+.Main-title1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    left: 50px;
+    bottom: 550px;
+}
+.Main-ti h1 {
+    font-size: 28px;
+    color: rgb(0,32,76);
+    font-family: 'Poppins', sans-serif;
+}
+.xazi{
+    width: 1300px;
+    background-color: rgb(0,32,76);
+    height: 1px;
+}
+.main-contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 150px;
+}
+.Con1{
+    position: relative;
+    bottom: 30px;
+}
+.Con ul, .Con1 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.Con li, .Con1 li{
+    color: rgb(0,32,76);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.Con h1, .Con1 h1 {
+    font-size: 18px;
+    color: rgb(0,32,76);
+    font-family: 'Open Sans', sans-serif;
+}
+.sub p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0,32,76);
+}
+.sub label{
+    font-size: 15px;
+    color: #6E6E6E;
+    font-family: 'Open Sans', sans-serif;
+}
+.sub input{
+    width: 250px;
+    height: 40px;
+    padding: 3px 3px 3px 20px;
+    border-radius: 5px;    
+    border: 1px solid rgb(0,32,76);
+}
+.sub{
+    position: relative;
+    bottom: 30px;
+}
+.sub button{
+    border: none;
+    width: 105px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: rgb(167,0,250);
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s;
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+}
+.sub button:hover{
+    background-color: rgb(0,32,76);
+    transition: 0.3s;
+}
+footer .explore-img2 {
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+}
+footer{
+    position: relative;
+    bottom: 320px;
+}
+.Gameall21{
+    display: flex;
+    position: relative;
+    bottom: 650px;
+    right: 200px;
+}
+
+@media screen and (max-width:768px){
+    header{
+        display: none;
+    }    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .clock{
+        display: flex;
+        width: 300px;
+        position: relative;
+        bottom: 150px;
+        background-color: #fc3b8c;
+    }
+    ::after, ::before {
+        display: none;
+    }
+    .First-box-img img{
+        width: 100px;
+        display: flex;
+        position: relative;
+        top: 280px;
+    }
+    .First-box1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 7px;
+        position: relative;
+        top : 280px;
+    }
+    .First-box1 h1, .First-box1 h2, .First-box1 h3 {
+        font-size: 25px;
+    }
+    .Gameall{
+        display: flex;
+        width: 100%;
+        position: relative;
+        bottom: 250px;
+    }
+    .Gamefirst{
+        display: flex;
+        width: 200px;
+        height: 90px;
+    }
+    .Gamefirst img{
+        width: 55px;
+    }
+    .Gametext h4{
+        font-size: 14px;
+    }
+    .Gametext p {
+        font-size: 12px;
+    }
+    .Big-poto{
+        display: none;
+    }
+    .Small-poto{
+        display: none;
+    }
+    .Second-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 350px;
+    }
+    .Second-box h2{
+        width: 65px;
+        font-size: 21px;
+        height: 46px;
+    }
+    .Second-box h1{
+        width: 130px;
+        font-size: 21px;
+    }
+    .Second-box h3 {
+        font-size: 15px;
+    }
+    .explore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .explore-img img{
+        width: 600px;
+    }
+    .Gamefirst2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 220px;
+        height: 100px;
+        position: relative;
+        left: 70px;
+        bottom: 50px;
+    }
+    .Gamefirst2 img {
+        width: 70px;
+        height: 70px;
+    }
+    .Gametext1 h4 {
+        font-size: 20px;
+    }
+    .explore-games{
+        display: flex;
+        align-items: center;
+        width: 300px;
+        justify-content: center;
+        height: 400px;
+    }
+}
+
+
